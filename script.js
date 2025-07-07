@@ -21,7 +21,7 @@ productsContainer.addEventListener('click', function (event) {
     const clickedElement = event.target;
 
 
-    iif (clickedElement.classList.contains('add-t-cart')) {
+    if (clickedElement.classList.contains('add-t-cart')) {
         const productCard = clickedElement.closest('.pcard');
         if (productCard) {
             let productName = productCard.querySelector('.product-title').textContent;
