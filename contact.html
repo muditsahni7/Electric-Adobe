@@ -13,7 +13,39 @@
 </script>
     </head>
 <body style="font-family: 'Open Sans', sans-serif; margin: 0; padding: 0; background-color: #F8F4E3; color: #333; display: flex; justify-content: center; align-items: center; min-height: 100vh; box-sizing: border-box;">
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const contactFormFields = document.querySelectorAll('input[name="name"], input[name="email"], textarea[name="message"]');
+        let formStarted = false; // Flag to ensure event fires only once per form load
 
+        contactFormFields.forEach(field => {
+            field.addEventListener('focus', function() {
+                if (!formStarted) {
+                    window.digitalData.event = {
+                        name: "contactFormStarted"
+                    };
+                    console.log("digitalData after Contact Form Started:", window.digitalData);
+                    formStarted = true; // Set flag to true after first focus
+                    // Optionally, you could use _satellite.track("contactFormStarted") here
+                    // if you set up a custom event in Tags triggered by _satellite.track()
+                }
+            });
+        });
+
+        // Example for form submission (modify your form's actual submit handler)
+        const contactForm = document.querySelector('form'); // Assuming your contact.html has a <form> tag
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(event) {
+                // event.preventDefault(); // Uncomment if you want to handle submission via JS
+                window.digitalData.event = {
+                    name: "contactFormSubmitted",
+                    // Add form data here if needed
+                };
+                console.log("digitalData after Contact Form Submitted:", window.digitalData);
+            });
+        }
+    });
+</script>
     <div class="contact-container" style="background-color: #FFFFFF; border-radius: 12px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); width: 90%; max-width: 1100px; padding: 40px; display: flex; flex-direction: column; gap: 30px;">
         <a href="index.html" class="contact-home"><img src="./electric-icon.png" class="contact-icon"><span>ELECTRIC</span></a>
         <div class="contact-header" style="text-align: center; margin-bottom: 20px;">
