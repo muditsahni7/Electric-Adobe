@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+
+    </head>
+<body style="font-family: 'Open Sans', sans-serif; margin: 0; padding: 0; background-color: #F8F4E3; color: #333; display: flex; justify-content: center; align-items: center; min-height: 100vh; box-sizing: border-box;">
+
+    <div class="contact-container" style="background-color: #FFFFFF; border-radius: 12px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); width: 90%; max-width: 1100px; padding: 40px; display: flex; flex-direction: column; gap: 30px;">
+        <a href="index.html" class="contact-home"><img src="./electric-icon.png" class="contact-icon"><span>ELECTRIC</span></a>
+        <div class="contact-header" style="text-align: center; margin-bottom: 20px;">
+            <h1 style="font-family: 'Montserrat', sans-serif; font-size: 2.8em; color: #364F6B; margin-bottom: 10px;">Get in Touch</h1>
+            <p style="font-size: 1.1em; color: #555; line-height: 1.6;">We'd love to hear from you! Fill out the form below or reach out directly.</p>
+        </div>
+
+        <div class="contact-content" style="display: flex; flex-wrap: wrap; gap: 40px; justify-content: space-between;">
+
+            <div class="contact-form-wrapper" style="flex: 2; min-width: 300px;">
+                <form action="#" method="POST" enctype="multipart/form-data" class="contact-form">
+                    <div class="form-group" style="margin-bottom: 20px;">
+                        <label for="name" style="display: block; font-weight: 600; margin-bottom: 8px; color: #444; font-size: 1em;">Name</label>
+                        <input type="text" id="name" name="name" required style="width: calc(100% - 28px); padding: 14px; border: 1px solid #364F6B; border-radius: 6px; font-size: 1em; font-family: 'Open Sans', sans-serif; box-sizing: border-box;">
+                    </div>
+
+                    <div class="form-group" style="margin-bottom: 20px;">
+                        <label for="email" style="display: block; font-weight: 600; margin-bottom: 8px; color: #444; font-size: 1em;">Email</label>
+                        <input type="email" id="email" name="email" required style="width: calc(100% - 28px); padding: 14px; border: 1px solid #364F6B; border-radius: 6px; font-size: 1em; font-family: 'Open Sans', sans-serif; box-sizing: border-box;">
+                    </div>
+
+                    <div class="form-group" style="margin-bottom: 20px;">
+                        <label for="age" style="display: block; font-weight: 600; margin-bottom: 8px; color: #444; font-size: 1em;">Age</label>
+                        <input type="number" id="age" name="age" min="1" max="120" style="width: calc(100% - 28px); padding: 14px; border: 1px solid #364F6B; border-radius: 6px; font-size: 1em; font-family: 'Open Sans', sans-serif; box-sizing: border-box;">
+                    </div>
+
+                    <div class="form-group" style="margin-bottom: 20px;">
+                        <label for="subject" style="display: block; font-weight: 600; margin-bottom: 8px; color: #444; font-size: 1em;">Subject</label>
+                        <input type="text" id="subject" name="subject" style="width: calc(100% - 28px); padding: 14px; border: 1px solid #364F6B; border-radius: 6px; font-size: 1em; font-family: 'Open Sans', sans-serif; box-sizing: border-box;">
+                    </div>
+
+                    <div class="form-group" style="margin-bottom: 20px;">
+                        <label for="message" style="display: block; font-weight: 600; margin-bottom: 8px; color: #444; font-size: 1em;">Message</label>
+                        <textarea id="message" name="message" rows="6" required style="width: calc(100% - 28px); padding: 14px; border: 1px solid #364F6B; border-radius: 6px; font-size: 1em; font-family: 'Open Sans', sans-serif; resize: vertical; box-sizing: border-box;"></textarea>
+                    </div>
+
+                    <div class="form-group" style="margin-bottom: 20px;">
+                        <label for="attachment" style="display: block; font-weight: 600; margin-bottom: 8px; color: #444; font-size: 1em;">Attach File (Optional)</label>
+                        <input type="file" id="attachment" name="attachment" style="width: 100%; padding: 12px 0; border: 1px solid #D1E8E2; border-radius: 6px; font-size: 1em; font-family: 'Open Sans', sans-serif; box-sizing: border-box; background-color: #F8F8F8;">
+                    </div>
+
+                    <button type="submit" class="submit-btn" style="background-color: #5D9ECB; color: #FFFFFF; padding: 15px 30px; border: none; border-radius: 6px; font-size: 1.1em; font-weight: 600; cursor: pointer; transition: background-color 0.3s ease, transform 0.2s ease; width: 100%; box-sizing: border-box;">Send Message</button>
+                </form>
+            </div>
+
+            <div class="contact-info" style="flex: 1; min-width: 250px; background-color: #ECF7F7; padding: 30px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);">
+                <h2 style="font-family: 'Montserrat', sans-serif; color: #364F6B; margin-bottom: 20px; font-size: 1.8em;">Our Details</h2>
+                <p style="margin-bottom: 15px; line-height: 1.8;"><strong style="color: #444;">Address:</strong> Delhi, India</p>
+                <p style="margin-bottom: 15px; line-height: 1.8;"><strong style="color: #444;">Phone:</strong> +91 1234567890</p>
+                <p style="margin-bottom: 15px; line-height: 1.8;"><strong style="color: #444;">Email:</strong> info@Electric.com</p>
+
+                <h3 style="font-family: 'Montserrat', sans-serif; color: #364F6B; margin-top: 30px; margin-bottom: 15px;">Follow Us</h3>
+                <div class="social-links" style="margin-top: 20px; display: flex; gap: 15px;">
+                    <a href="#" class="social-icon" style="display: flex; justify-content: center; align-items: center; width: 40px; height: 40px; background-color: #5D9ECB; color: #FFFFFF; border-radius: 50%; text-decoration: none; font-size: 1.2em; transition: background-color 0.3s ease, transform 0.2s ease;">F</a>
+                    <a href="#" class="social-icon" style="display: flex; justify-content: center; align-items: center; width: 40px; height: 40px; background-color: #5D9ECB; color: #FFFFFF; border-radius: 50%; text-decoration: none; font-size: 1.2em; transition: background-color 0.3s ease, transform 0.2s ease;">T</a>
+                    <a href="#" class="social-icon" style="display: flex; justify-content: center; align-items: center; width: 40px; height: 40px; background-color: #5D9ECB; color: #FFFFFF; border-radius: 50%; text-decoration: none; font-size: 1.2em; transition: background-color 0.3s ease, transform 0.2s ease;">L</a>
+                    <a href="#" class="social-icon" style="display: flex; justify-content: center; align-items: center; width: 40px; height: 40px; background-color: #5D9ECB; color: #FFFFFF; border-radius: 50%; text-decoration: none; font-size: 1.2em; transition: background-color 0.3s ease, transform 0.2s ease;">I</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </body>
+</html>

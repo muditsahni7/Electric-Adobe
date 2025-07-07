@@ -1,0 +1,143 @@
+*{
+    font-family: sans-serif;
+}
+.icon {
+            background-image: url(./electric-icon.png);
+            background-size: cover;
+            background-position: center;
+        }
+        .contact-icon{
+            height: 100px;
+            width: 100px;
+            margin: auto;
+            position: absolute;
+        }
+        .contact-home{
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+        .banner{
+            background-image: url(./images/cover.jpeg);
+            background-size: cover;
+            background-position: center;
+        }
+        .pcard{
+            width: 300px;
+            overflow: hidden;
+        }
+        .pcard img{
+            height: 300px;
+            width: 100%;
+        }
+        .cart-icn{
+           position: relative;
+           cursor: pointer;
+        }
+        #cart-num{
+            position: absolute;
+            top: 1%;
+            right: 1.5%;
+        }
+        #cart-num-sm{
+            position: absolute;
+            left: 14%;
+            top: 5.2%;
+        }
+        #crt{
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        
+        #crt-btn{
+             cursor: pointer;
+        }
+
+        #crt{
+            overflow-y: auto;
+            position: fixed;
+            top: 0;
+            right: 0;
+        }
+
+        .add-t-cart{
+            cursor: pointer;
+
+        }
+
+        .add-t-cart:active{
+            background-color: azure;
+            color: black;
+        }
+
+.carousel-container {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            max-width: 900px; /* Adjust max-width as needed */
+            margin: 2rem auto;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+
+        .carousel-slide {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .carousel-slide img {
+            width: 100%;
+            height: 400px; /* Fixed height for consistency */
+            object-fit: cover; /* Ensures images cover the area without distortion */
+            border-radius: 0.5rem;
+        }
+
+        .carousel-button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 0.75rem 1rem;
+            cursor: pointer;
+            font-size: 1.5rem;
+            border-radius: 0.25rem;
+            z-index: 10;
+        }
+
+        .carousel-button.prev {
+            left: 1rem;
+        }
+
+        .carousel-button.next {
+            right: 1rem;
+        }
+
+        .carousel-indicators {
+            position: absolute;
+            bottom: 1rem;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 0.5rem;
+            z-index: 10;
+        }
+
+        .carousel-dot {
+            width: 10px;
+            height: 10px;
+            background-color: rgba(255, 255, 255, 0.5);
+            border-radius: 50%;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .carousel-dot.active {
+            background-color: white;
+        }
+
+
+
+   
